@@ -1,0 +1,111 @@
+#root {
+
+    -fx-background-color: #1A936F;
+
+}
+
+#labelTitle {
+
+    -fx-padding: 10px;
+    -fx-text-fill: #F2DC5D;
+
+}
+
+.button {
+
+    -fx-background-color: #086788;
+    -fx-background-radius: 0;
+    -fx-font-size: 20px;
+    -fx-text-fill: #F2DC5D;
+}
+
+.button:hover {
+
+    -fx-border-color: #1A936F;
+    -fx-border-width: 2px;
+
+}
+
+.button:selected {
+
+    -fx-background-color: #F2DC5D;
+
+}
+
+.text-field {
+
+    -fx-background-radius: 0;
+    -fx-background-color: #07A0C3;
+    -fx-font-size: 20px;
+    -fx-text-fill: #F2DC5D;
+
+}
+
+#equalsButton {
+
+    -fx-background-color: #132E32;
+
+}
+
+#plusButton {
+
+    -fx-background-color: #132E32;
+
+}
+
+#minusButton {
+
+    -fx-background-color: #132E32;
+
+}
+
+#timesButton {
+
+    -fx-background-color: #132E32;
+
+}
+
+#divideButton {
+
+    -fx-background-color: #132E32;
+
+}
+
+#backButton {
+
+    -fx-font-size: 10px;
+
+}
+
+#clearButton {
+
+    -fx-font-size: 10px;
+
+}
+
+#minButton {
+
+    -fx-font-size: 10px;
+    -fx-background-color: #1A936F;
+
+}
+
+#minButton:hover {
+
+    -fx-background-color: green;
+    -fx-border-color: green;
+
+}
+
+#closeButton {
+
+    -fx-font-size: 10px;
+    -fx-background-color: #1A936F;
+
+}
+
+#closeButton:hover {
+
+    -fx-background-color: red;
+    -fx-border-color: red;
+}

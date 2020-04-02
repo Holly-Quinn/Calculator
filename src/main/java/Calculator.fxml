@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane id="root" alignment="center" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.calculatorController">
+   <columnConstraints>
+      <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+      <ColumnConstraints maxWidth="0.0" minWidth="0.0" prefWidth="0.0" />
+      <ColumnConstraints maxWidth="-Infinity" minWidth="-Infinity" prefWidth="100.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="25.0" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" />
+      <RowConstraints maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" />
+   </rowConstraints>
+   <children>
+      <TextField fx:id="screen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" GridPane.columnSpan="2147483647" GridPane.rowIndex="1" />
+      <Button fx:id="sevenButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="7" GridPane.rowIndex="2" />
+      <Button fx:id="eightButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Button fx:id="nineButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+      <Button fx:id="fourButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="4" GridPane.rowIndex="3" />
+      <Button fx:id="fiveButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <Button fx:id="sixButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+      <Button fx:id="oneButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="1" GridPane.rowIndex="4" />
+      <Button fx:id="twoButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <Button fx:id="threeButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+      <Button fx:id="zeroButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="0" GridPane.rowIndex="5" />
+      <Button fx:id="timesButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="*" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+      <Button fx:id="divideButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="/" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+      <Button fx:id="minusButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="-" GridPane.columnIndex="4" GridPane.rowIndex="4" />
+      <Button fx:id="plusButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="+" GridPane.columnIndex="4" GridPane.rowIndex="5" />
+      <Button fx:id="equalsButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#tryCalculate" prefHeight="50.0" prefWidth="100.0" text="=" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+      <Button fx:id="decimalButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#append" prefHeight="50.0" prefWidth="100.0" text="." GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <HBox alignment="TOP_RIGHT" prefHeight="150.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="TOP">
+         <children>
+            <Button fx:id="minButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#minimiseProgram" prefHeight="24.0" prefWidth="24.0" text="-" />
+            <Button fx:id="closeButton" alignment="CENTER_RIGHT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#exitProgram" prefHeight="24.0" prefWidth="24.0" text="x" />
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="backButton" alignment="CENTER" contentDisplay="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#backSpace" prefHeight="50.0" prefWidth="50.0" text="&lt;&lt;" />
+            <Button fx:id="clearButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#clearScreen" prefHeight="50.0" prefWidth="50.0" text="Clear" />
+         </children>
+      </HBox>
+      <Label id="labelTitle" text="Calculator" />
+   </children>
+</GridPane>
