@@ -3,6 +3,7 @@ package main.java;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javax.script.ScriptEngine;
@@ -34,7 +35,20 @@ public class calculatorController {
 
     }
 
-    public void tryCalculate (MouseEvent mouseEvent) {
+    public void clickEquals (MouseEvent mouseEvent) {
+
+        if (screen.getText().equals("")){
+
+
+        }else {
+
+            tryCalculate();
+
+        }
+
+    }
+
+    public void tryCalculate () {
 
         Boolean complete = false;
 
@@ -77,7 +91,13 @@ public class calculatorController {
 
     }
 
-    public void clearScreen(MouseEvent mouseEvent) {
+    public void clickClearScreen(MouseEvent mouseEvent) {
+
+        clearScreen();
+
+    }
+
+    public void clearScreen() {
 
         screen.clear();
 
@@ -91,12 +111,57 @@ public class calculatorController {
 
     }
 
-    public void backSpace (MouseEvent mouseEvent) {
+    public void backSpace() {
 
-        screen.setText(screen.getText().substring(0, screen.getText().length() - 1));
+        if (screen.getText().equals("")){
+
+
+        }else {
+
+            screen.setText(screen.getText().substring(0, screen.getText().length() - 1));
+
+        }
+
 
     }
 
+    public void clickBackSpace(MouseEvent mouseEvent) {
+
+        backSpace();
+
+    }
+
+    public void appendWithKey(KeyEvent keyEvent) {
+
+        screen.setFocusTraversable(true);
+        screen.requestFocus();
+
+        if (screen.getText().equals("ERROR")) {
+
+            clearScreen();
+            screen.setText(screen.getText() + keyEvent.getText());
+
+        } else {
+
+            screen.setText(screen.getText() + keyEvent.getText());
+
+            if (keyEvent.getCode().toString() == "ENTER"){
+
+                tryCalculate();
+
+            }
+
+            if (keyEvent.getCode().toString() == "BACK_SPACE"){
+
+                backSpace();
+
+            }
+
+        }
+
+
+
+    }
 
 
 }

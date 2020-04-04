@@ -26,9 +26,9 @@
 
 }
 
-.button:selected {
+.button:armed {
 
-    -fx-background-color: #F2DC5D;
+    -fx-background-color: #1A936F;
 
 }
 
@@ -41,43 +41,19 @@
 
 }
 
-#equalsButton {
+#equalsButton, #plusButton, #minusButton, #timesButton, #divideButton {
 
     -fx-background-color: #132E32;
 
 }
 
-#plusButton {
+#equalsButton:armed, #plusButton:armed, #minusButton:armed, #timesButton:armed, #divideButton:armed {
 
-    -fx-background-color: #132E32;
-
-}
-
-#minusButton {
-
-    -fx-background-color: #132E32;
+    -fx-background-color: #1A936F;
 
 }
 
-#timesButton {
-
-    -fx-background-color: #132E32;
-
-}
-
-#divideButton {
-
-    -fx-background-color: #132E32;
-
-}
-
-#backButton {
-
-    -fx-font-size: 10px;
-
-}
-
-#clearButton {
+#backButton, #clearButton {
 
     -fx-font-size: 10px;
 
