@@ -13,7 +13,7 @@
   <stayAlive>false</stayAlive>
   <restartOnCrash>false</restartOnCrash>
   <manifest></manifest>
-  <icon>C:\Users\Allan\Documents\College\Programming\Calculator\src\main\resources\Calculator.ico</icon>
+  <icon>C:\Users\Allan\Documents\College\Programming\Calculator\src\main\main.java.resources\Calculator.ico</icon>
   <singleInstance>
     <mutexName>calculator</mutexName>
     <windowTitle></windowTitle>
